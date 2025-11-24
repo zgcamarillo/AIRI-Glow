@@ -1,0 +1,135 @@
+$brownCoffee: #4A202A;
+$blush: #D86487;
+$metallicPink: #EEAAC3;
+$palePink: #F1DFDD;
+$claret: #76172C;
+@font-face {
+    font-family: "myChaman";
+    src: url(/chaman_elegant/CHAMAN\ ELEGANT\ FONT.ttf) format(truetype),
+    url(/chaman_elegant/CHAMAN\ ELEGANT\ FONT.otf) format(opentype);
+}
+//icon img
+#iconImg {
+    border-radius: 50%;
+}
+body {
+    background-color: $palePink;
+    margin: 0;
+    padding: 0;
+}
+// announcenment, hero, header, nav 
+.mainHeaderGroup {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $claret;
+}
+//announcmenet
+.announcementBar {
+    height: 30px;
+    background-color: $claret;
+    color: $palePink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $palePink;
+    position: relative;
+    width: 100%;
+    z-index: 888;
+}
+.announcementText {
+    font-family: "myChaman", sans-serif;
+    font-size: 15px;
+}
+.fade { 
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+//header row 
+.navWrapper {
+    height: 60px;
+    color: $claret;
+    font-family: "myChaman", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin-left: 120px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#favIcon {
+    text-decoration: none;
+    color: $claret;
+    font-size: 25px;
+    margin-left: 35px;
+}
+#favIcon:active {
+    color: $brownCoffee;
+}
+
+#cartIcon {
+    width: 25px;
+    margin-right: 5px;
+}
+.tabletDesktopNav {
+    display: none;
+}
+input {
+    display: none;
+}
+//mobile curtain
+.navIcon {
+    font-size: 40px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    z-index: 999;
+    color: $claret;
+    user-select: none;
+}
+.navIcon:active {
+    color: $brownCoffee;
+}
+//before menu open ≡
+.navIcon::before {
+    content: "≡";
+}
+//when open change to x to c lose
+.navToggle:checked 
++ .navIcon::before {
+    content: "x";
+}
+.mobileCurtain {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    background-color: rgba($claret, 0.9);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: height 0.6s ease-in-out;
+    z-index: 888;
+}
+.curtainMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.curtainMenu a {
+    margin: 0;
+    padding: 30px;
+    border-radius: 40px;
+}
+.curtainMenu a:active {
+    background-color: $palePink;
+}
+.navToggle:checked ~ .mobileCurtain {
+    height: 100vh;
+}
