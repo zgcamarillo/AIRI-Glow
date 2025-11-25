@@ -147,48 +147,6 @@ a {
 .navToggle:checked ~ .mobileCurtain {
     height: 100vh;
 }
-//hero video 
-.hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-}
-#heroVideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-.heroText {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    color: $palePink;
-    transform: translateX(-50%);
-    text-align: center;
-    text-shadow: 3px 3px 9px rgba($claret, 1);
-    z-index: 2;
-    width: 100%;
-}
-#headerShopBtn {
-    z-index: 3;
-    color: $claret;
-    background-color: $palePink;
-    position: absolute;
-    display: inline-block;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: "myVostela";
-    border-radius: 30px;
-}
-#headerShopBtn:active {
-    background-color: $claret;
-    color: $palePink;
-}
 @media (min-width: 768px )  {
 .navWrapper {
     height: 80px;
@@ -206,17 +164,8 @@ h1 {
 .navIcon {
     font-size: 60px;
 }
-h2 {
-    font-size: 50px;
-}
-#headerShopBtn {
-    font-size: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .curtainMenu a {
     font-size: 2em;
     margin: 30px;
 }
 }
-

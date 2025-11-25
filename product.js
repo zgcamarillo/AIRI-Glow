@@ -1,3 +1,4 @@
+
 // announcement bar 
 const announcements = [ 
     "FREE STANDARD US SHIPPING W $50 ORDER", 
@@ -5,11 +6,6 @@ const announcements = [
     "25% OFF SITEWIDE LIVE NOW",
     "FREE INTERNATIONAL SHIPPING W $60 ORDER"
 ]
-const fName = document.querySelector("#firstName");
-const lName = document.querySelector("#lastName");
-const email = document.querySelector("#email");
-const pNumber = document.querySelector("#phoneNumber");
-
 //we are starting at 0 index
 let index = 0;
 //adding roate announcements function
@@ -29,17 +25,3 @@ function rotateAnnouncements() {
 rotateAnnouncements();
 //rotate every 4 seconds
 setInterval(rotateAnnouncements, 4000);
-
-//FORM VALIDATION
-function validateForm() {
-    if (fName.value === "" || 
-        lName.value === "" ||
-        email.value === "" || 
-        pNumber.value === ""
-    ) {
-    alert("Please Fill Out All Required Forms");
-    return false
-    } else {
-        return true;
-    }
-} 
