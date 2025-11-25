@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIRI GlowCustomer Support</title>
+    <title>AIRI Glow - Customer Support</title>
     <link rel="shortcut icon" href="icon.png" id="iconImg">
+    <link rel="stylesheet" href="contactpage.css">
     
 </head>
 <body>
@@ -33,5 +34,34 @@
                 </nav>
             </div>
     </header>
+    <div class="contactUsContainerWrapper">
+        <div class="contactUsContainer">
+            <h2>Customer Support</h2>
+            <p></p>
+            <div class="contactUsWrapper">
+                <img src="">
+                <div class="contactForm">
+                    <form>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number" required>
+                        <select id="subject" name="subject" placeholder="Subject">
+                            <option value="subjectplaceholder">Subject</option>
+                            <option value="myAccount">My Account</option>
+                            <option value="genQuestions">General Feedback or Questions</option>
+                            <option value="profDiscount">Professional Discount Program</option>
+                            <option value="prodConcerns">Products Concerns & Allergic Reactions</option>
+                            <option value="webFeedback">Website and Technical Feedback</option>
+                            <option value="privPolicy">Privacy Policy</option>
+                        </select>
+                        <textarea id="comments" name="comments" placeholder="Enter Your Comments Here..."></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="contactpage.js"></script></script>
 </body>
 </html>

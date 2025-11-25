@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid $claret;
+    background-color: $palePink;
 }
 //announcmenet
 .announcementBar {
@@ -67,6 +68,7 @@ body {
 }
 h1 {
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 a {
@@ -74,11 +76,11 @@ a {
     color: inherit;
 }
 #favIcon {
-    position: absolute;
     text-decoration: none;
     color: $claret;
-    font-size: 25px;
+    position: absolute;
     right: 65px;
+    font-size: 25px;;
 }
 #favIcon:active {
     color: $brownCoffee;
@@ -147,46 +149,62 @@ a {
 .navToggle:checked ~ .mobileCurtain {
     height: 100vh;
 }
-//hero video 
-.hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
+//contact us page
+.contactUsContainerWrapper {
+    background-image: url(cosmetics-2116386_1280.jpg);
+    background-size: cover;
+    padding: 10px;
+    margin: 0 auto;
 }
-#heroVideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-.heroText {
-    position: absolute;
-    top: 10px;
-    left: 50%;
+.contactUsContainer {
+    background-color: rgba($claret, 0.7);
     color: $palePink;
-    transform: translateX(-50%);
-    text-align: center;
-    text-shadow: 3px 3px 9px rgba($claret, 1);
-    z-index: 2;
-    width: 100%;
-}
-#headerShopBtn {
-    z-index: 3;
-    color: $claret;
-    background-color: $palePink;
-    position: absolute;
-    display: inline-block;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: "myVostela";
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
+    padding: 20px;
+    border: 2px solid $brownCoffee;
+    margin: 15px auto;
 }
-#headerShopBtn:active {
+h2 {
+    font-family: "myVostela";
+    font-size: 30px;
+
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+input[type=text], 
+input[type=email],
+input[type=number],
+select, 
+textarea {
+    background-color: $palePink;
+    color: $brownCoffee;
+    width: 90%;
+    border: 2px solid $brownCoffee;
+    resize: vertical;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: "myVostela", sans-serif;
+}
+textarea {
+    height: 100px;
+}
+input[type=submit] {
+    background-color: $palePink;
+    color: $brownCoffee;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "myVostela", sans-serif;
+    border: 2px solid $brownCoffee;
+    font-size: 18px;
+}
+input[type=submit]:active {
     background-color: $claret;
     color: $palePink;
-
 }
