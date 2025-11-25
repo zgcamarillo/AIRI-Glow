@@ -24,3 +24,22 @@ function rotateAnnouncements() {
 rotateAnnouncements();
 //rotate every 4 seconds
 setInterval(rotateAnnouncements, 4000);
+
+//FORM VALIDATION
+const fName = document.querySelector("#firstName");
+const lName = document.querySelector("#lastName");
+const email = document.querySelector("#email");
+const pNumber = document.querySelector("#phoneNumber");
+
+function validateForm() {
+    if (fName.value === "" || 
+        lName.value === "" ||
+        email.value === "" || 
+        pNumber.value === ""
+    ) {
+    alert("Please Fill Out All Required Forms");
+    return false
+    } else {
+        return true;
+    }
+} 

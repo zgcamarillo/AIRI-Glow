@@ -162,14 +162,15 @@ a {
 }
 
 .contactUsContainerWrapper {
-  background-image: url(cosmetics-2116386_1280.jpg);
+  background-image: url(contactusbackground.jpg);
   background-size: cover;
+  background-position: center;
   padding: 10px;
   margin: 0 auto;
 }
 
 .contactUsContainer {
-  background-color: rgba(118, 23, 44, 0.7);
+  background-color: rgba(118, 23, 44, 0.9);
   color: #F1DFDD;
   width: 80%;
   display: flex;
@@ -205,6 +206,10 @@ textarea {
   margin-bottom: 20px;
   padding: 10px;
   font-family: "myVostela", sans-serif;
+}
+
+select {
+  width: 98%;
 }
 
 textarea {
