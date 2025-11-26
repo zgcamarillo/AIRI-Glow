@@ -36,8 +36,9 @@ fetch("product.json")
             <div class="product-card">
                 <img src="${products.image}" alt="${products.name}">
                 <h3>${products.name}</h3>
-                <h3>$${products.price}</h3>
                 <p>${products.description}</p>
+                <h3>$${products.price}</h3>
+                
             </div>
             `;
         });

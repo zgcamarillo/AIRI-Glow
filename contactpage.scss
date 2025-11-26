@@ -381,6 +381,10 @@ select {
         border-radius: 20px;
         padding: 7px 17px;
     }
+     .tabletDesktopNav a:hover {
+        background-color: $palePink;
+        color: $claret;
+    }
     .footerContainer {
         max-width: 1400px;
         padding: 40px 0;

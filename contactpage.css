@@ -407,6 +407,10 @@ h3 {
     border-radius: 20px;
     padding: 7px 17px;
   }
+  .tabletDesktopNav a:hover {
+    background-color: #F1DFDD;
+    color: #76172C;
+  }
   .footerContainer {
     max-width: 1400px;
     padding: 40px 0;
