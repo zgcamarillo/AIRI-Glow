@@ -1,14 +1,11 @@
 version: 1
 frontend:
   phases:
-    preBuild:
-      commands:
-        - echo "Starting build"
     build:
       commands:
-        - echo "Nothing to build - static site"
+        - ls -la
+        - ls -la assets/
   artifacts:
     baseDirectory: /
     files:
       - '**/*'
-      - 'assets/**/*'
