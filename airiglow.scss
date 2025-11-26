@@ -23,6 +23,7 @@ body {
     background-color: $palePink;
     margin: 0;
     padding: 0;
+    font-family: "myVostela", sans-serif;
 }
 // announcenment, hero, header, nav 
 .mainHeaderGroup {
@@ -153,7 +154,7 @@ a {
     width: 100%;
     height: 80vh;
 }
-#heroVideo {
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -164,7 +165,7 @@ a {
     top: 10px;
     left: 50%;
     color: $palePink;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     text-align: center;
     text-shadow: 1px 1px 9px rgba($claret, 1);
     z-index: 2;
@@ -176,7 +177,7 @@ a {
     background-color: $palePink;
     position: absolute;
     display: inline-block;
-    bottom: 30px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     padding: 15px;
@@ -184,6 +185,7 @@ a {
     text-decoration: none;
     font-family: "myVostela";
     border-radius: 30px;
+    border: 1px $claret solid;
 }
 #headerShopBtn:active {
     background-color: $claret;
