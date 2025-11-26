@@ -25,3 +25,20 @@ function rotateAnnouncements() {
 rotateAnnouncements();
 //rotate every 4 seconds
 setInterval(rotateAnnouncements, 4000);
+
+fetch("product.json")
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById("productGrid");
+
+        data.products.forEach(products => {
+            container.innerHTML += `
+            <div class="product-card">
+                <img src="${products.image}" alt="${products.name}">
+                <h3>${products.name}</h3>
+                <h3>$${products.price}</h3>
+                <p>${products.description}</p>
+            </div>
+            `;
+        });
+    });

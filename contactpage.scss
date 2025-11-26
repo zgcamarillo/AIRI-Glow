@@ -226,7 +226,40 @@ input[type=submit]:active {
     background-color: $claret;
     color: $palePink;
 }
-
+.footerContainer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "myVostela", sans-serif;
+}
+.footerSection {
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.footerSection a {
+    margin: 10px;
+    color: black;
+}
+.footerSection a:active {
+    color: $claret;
+}
+h3 {
+    color: $brownCoffee;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.footerSection h4, 
+.footerSection h3 {
+    text-align: center;
+    color: $claret;
+}
+.socialIcons img {
+    width: 40px;
+    align-items: center;
+    margin: 0 20px;
+}
 @media (min-width: 768px )  {
 .navWrapper {
     height: 80px;
@@ -248,6 +281,20 @@ h1 {
     font-size: 2em;
     margin: 30px;
 }
+.footerContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footerSection {
+    margin-bottom: 0;
+}
+.socialIcons img {
+    width: 32px;
+}
 }
 @media (min-width: 1000px) {
 
@@ -257,15 +304,90 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+.contactUsContainer {
+    max-width: 600px;
+}
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea {
+    max-width: 550px;
+}
 #modelOneImg {
     width: 90%;
     padding: 50px 15px;
     border-radius: 40px;
+    max-width: 800px;
 }
 h2 {
     top: 100px;
 }
 select {
     width: 95%;
+}
+.footerContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footerSection {
+    margin-bottom: 0;
+}
+.socialIcons img {
+    width: 32px;
+}
+@media (min-width: 1200px) {
+    h2 {
+        top: 150px;
+    }
+    #modelOneImg {
+        height: 600px;
+        width: auto;
+        max-width: 900px;
+        margin: 0 auto;
+        display: block;
+    
+    }
+    .contactForm {
+        max-width: 800px;
+    }
+    .customerSupportImg img {
+        border-radius: 20px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    label {
+        display: none;
+    }
+    .tabletDesktopNav {
+        font-family: "myVostela", sans-serif;
+        color: $palePink;
+        border: $palePink 1px solid;
+        display: flex;
+        justify-content: center;
+        gap: 75px;
+        list-style: none;
+        margin: 0;
+        padding: 15px;
+        background-color: $claret;
+    }
+    .tabletDesktopNav a {
+        border: 1px $palePink solid;
+        border-radius: 20px;
+        padding: 7px 17px;
+    }
+    .footerContainer {
+        max-width: 1400px;
+        padding: 40px 0;
+        gap: 60px;
+    }
+    .socialIcons img {
+        width: 28px;
+    }
 }
 }
