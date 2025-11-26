@@ -1,0 +1,75 @@
+[
+    {
+        "name":"16 Days of Golden Glam",
+        "price": 149.99,
+        "imageURL":"productsimg/AIRIChristmasOne.png",
+        "description":"Holiday Delux Make Up Set Advent Calendar"
+    },
+    {
+        "name":"The Prestige Beauty Collection",
+        "imageURL":"productsimg/AIRIChristmanTwo.png",
+        "price": 149.99,
+        "description":"Holiday Must Haves Make Up Gift Set Advent Calendar"
+    },
+    {
+        "name":"Opulent Beauty Vault",
+        "price": 179.99,
+        "imageURL":"productsimg/AIRIChristmasThree.png",
+        "description":"AIRI's Beauty Treasure Chest Make Up and Skincare Advent Calendar"
+    },
+    {
+        "name":"Beauty Couture Eyeshadow",
+        "price":49.99,
+        "image":"productsimg/AIRIEyeShadow.png",
+        "description":"Soft Glam Eyeshadow Palette"
+    },
+    {
+        "name":"Ever Glow Foundation",
+        "price":49.00,
+        "image":"productsimg/AIRIFoundation.png",
+        "description":"Light Reflecting Skin Improving Medium Coverage Foundation"
+    },
+    {
+        "name":"Luminous Silk Primer",
+        "price": 39.90,
+        "image":"productsimg/AIRIPrimer",
+        "description":"Glowy Lightweight Dewey Illuminating Primer"
+    },
+    {
+        "name":"Idol Lash Lifting Mascara",
+        "price": 29.00,
+        "image":"productsimg/AIRIMascara",
+        "description":"Limitless Lash Lengthening Clean Mascara"
+    },
+    {
+        "name":"Lip Maximizer Gloss",
+        "price": 42.00,
+        "image":"productsimg/AIRIGloss.png",
+        "description":"Glassy High Shine Lip Gloss"
+    },
+    {
+        "name":"Fix and Conceal Color Corrector",
+        "price": 29.90,
+        "image":"productsimg/AIRIColorCorrector.png",
+        "description":"Fix & Conceal All-In-One Color Correcting Palette"
+    },
+    {
+        "name":"AIRI Favorites Make Up Value Set",
+        "price": 49.00,
+        "image":"productsimg/AIRIkit.png",
+        "description":"Holiday Must Have Value Set"
+    },
+    {
+        "name":"Halo Glow Setting Powder",
+        "price": 32.00,
+        "image":"productsimg/AIRISettingPowder.png",
+        "description":"Surreal Skin Soft Blur Setting Powder"
+    },
+    {
+        "name":"AIRI Brush Set",
+        "price": 79.00,
+        "image":"productsimg/AIRIBrushKit",
+        "description":"Pro Face and Eye Brush Set"
+    }
+    
+]

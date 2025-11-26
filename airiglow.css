@@ -180,7 +180,7 @@ a {
   color: #F1DFDD;
   transform: translateX(-50%);
   text-align: center;
-  text-shadow: 3px 3px 9px #76172c;
+  text-shadow: 1px 1px 9px #76172c;
   z-index: 2;
   width: 100%;
 }
@@ -234,5 +234,13 @@ a {
   .curtainMenu a {
     font-size: 2em;
     margin: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  input[type=checkbox] {
+    display: none;
+  }
+  label {
+    display: none;
   }
 }/*# sourceMappingURL=airiglow.css.map */

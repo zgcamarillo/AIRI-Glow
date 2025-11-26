@@ -151,31 +151,45 @@ a {
 }
 //contact us page
 .contactUsContainerWrapper {
-    background-image: url(contactusbackground.jpg);
+    background: $brownCoffee;
     background-size: cover;
     background-position: center;
     padding: 10px;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    position: absolute;
+    font-family: "myVostela";
+    font-size: 30px;
+    left: 50%;
+    color: $palePink;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba($claret, 1);
+    width: 100%;
+}
+#modelOneImg {
+    width: 100%;
+    border-radius: 20px;
+    z-index: 1;
 }
 .contactUsContainer {
     background-color: rgba($claret, 0.9);
     color: $palePink;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     padding: 20px;
     border: 2px solid $brownCoffee;
-    margin: 15px auto;
 }
-h2 {
-    font-family: "myVostela";
-    font-size: 30px;
 
-}
 p {
-    margin: 0;
+    font-family: "myVostela", sans-serif;
+    margin-bottom: 20px;
     padding: 0;
 }
 input[type=text], 
@@ -212,6 +226,7 @@ input[type=submit]:active {
     background-color: $claret;
     color: $palePink;
 }
+
 @media (min-width: 768px )  {
 .navWrapper {
     height: 80px;
@@ -232,5 +247,25 @@ h1 {
 .curtainMenu a {
     font-size: 2em;
     margin: 30px;
+}
+}
+@media (min-width: 1000px) {
+
+.contactUsContainerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+#modelOneImg {
+    width: 90%;
+    padding: 50px 15px;
+    border-radius: 40px;
+}
+h2 {
+    top: 100px;
+}
+select {
+    width: 95%;
 }
 }
