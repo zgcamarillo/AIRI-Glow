@@ -340,10 +340,16 @@ h3 {
     background-color: #F1DFDD;
     color: #76172C;
   }
+  #headerShopBtn:hover {
+    background-color: #76172C;
+    color: #F1DFDD;
+  }
   .footerContainer {
     max-width: 1400px;
-    padding: 40px 0;
     gap: 10px;
+  }
+  .footerSection h4 {
+    font-size: 25px;
   }
   .socialIcons img {
     width: 28px;

@@ -20,7 +20,7 @@ body {
 .mainHeaderGroup {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #76172C;
+  border-bottom: 1px solid #F1DFDD;
 }
 
 .announcementBar {
@@ -319,7 +319,6 @@ h3 {
   }
   .footerContainer {
     max-width: 1400px;
-    padding: 40px 0;
     gap: 10px;
   }
   .socialIcons img {

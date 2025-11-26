@@ -269,7 +269,6 @@ h2 {
     font-size: 2em;
     margin: 30px;
 }
-
 .socialIcons img {
     width: 32px;
 }
@@ -316,10 +315,16 @@ h2 {
         background-color: $palePink;
         color: $claret;
     }
+    #headerShopBtn:hover {
+        background-color: $claret;
+        color: $palePink;
+    }
     .footerContainer {
         max-width: 1400px;
-        padding: 40px 0;
         gap: 10px;
+    }
+    .footerSection h4 {
+        font-size: 25px;
     }
     .socialIcons img {
         width: 28px;

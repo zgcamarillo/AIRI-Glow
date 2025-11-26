@@ -28,7 +28,7 @@ body {
 .mainHeaderGroup {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid $claret;
+    border-bottom: 1px solid $palePink;
 }
 //announcmenet
 .announcementBar {
@@ -294,7 +294,6 @@ h1 {
     }
     .footerContainer {
         max-width: 1400px;
-        padding: 40px 0;
         gap: 10px;
     }
     .socialIcons img {
