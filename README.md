@@ -12,5 +12,6 @@ my skills in design, css animation/effects, JS animation, along with the use of 
 </ul>
 <img width="1680" height="1050" alt="PRODUCT" src="https://github.com/user-attachments/assets/367b3cda-a9af-45f6-82f7-fcdf16a826f1" />
 <h2>Clone My Repository!</h2>
-<p>git clone </p>
+<p>git clone https://github.com/zgcamarillo/AIRI-Glow.git</p>
+
 
