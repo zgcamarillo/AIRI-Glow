@@ -312,17 +312,22 @@ select,
 textarea {
     max-width: 550px;
 }
-#modelOneImg {
-    width: 90%;
+.imgWrapper {
     padding: 50px 15px;
     border-radius: 40px;
+    overflow: hidden;
+}
+#modelOneImg {
+    width: 90%;
     max-width: 800px;
+    display: block;
 }
 h2 {
     top: 100px;
 }
 select {
     width: 95%;
+}
 }
 @media (min-width: 1200px) {
     h2 {
@@ -377,4 +382,4 @@ select {
         width: 28px;
     }
 }
-}
+

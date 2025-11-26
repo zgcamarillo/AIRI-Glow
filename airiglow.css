@@ -171,7 +171,8 @@ a {
 .hero img {
   position: relative;
   height: 100%;
-  background-position: right;
+  -o-object-position: 30% center;
+     object-position: 30% center;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -215,8 +216,7 @@ a {
 .airiFooter {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: right;
   background-color: #4A202A;
 }
 
