@@ -173,7 +173,7 @@ a {
 #productGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 30px;
   padding: 10px;
 }
 
@@ -193,12 +193,23 @@ a {
   border-radius: 8px;
   padding: 0px;
   text-align: left;
-  box-shadow: 0 4px 10px rgba(118, 23, 44, 0.9);
 }
 
 .product-card img {
   width: 100%;
   border-radius: 8px;
+}
+
+.product-card:active {
+  box-shadow: 0 4px 10px rgba(118, 23, 44, 0.9);
+}
+
+.airiFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4A202A;
 }
 
 .footerContainer {
@@ -209,6 +220,11 @@ a {
   font-family: "myVostela", sans-serif;
 }
 
+.footerContainer h3,
+.footerContainer p {
+  color: #F1DFDD;
+}
+
 .footerSection {
   margin-bottom: 10px;
   text-align: center;
@@ -217,7 +233,7 @@ a {
 
 .footerSection a {
   margin: 10px;
-  color: black;
+  color: white;
 }
 
 .footerSection a:active {
@@ -225,7 +241,6 @@ a {
 }
 
 h3 {
-  color: #4A202A;
   font-size: 30px;
   margin-bottom: 0;
 }
@@ -233,7 +248,7 @@ h3 {
 .footerSection h4,
 .footerSection h3 {
   text-align: center;
-  color: #76172C;
+  color: #F1DFDD;
 }
 
 .socialIcons img {
@@ -267,20 +282,6 @@ h3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .footerContainer {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .footerSection {
-    margin-bottom: 0;
-  }
-  .socialIcons img {
-    width: 32px;
-  }
 }
 @media (min-width: 1200px) {
   input[type=checkbox] {
@@ -313,10 +314,13 @@ h3 {
   #productGrid {
     grid-template-columns: repeat(4, 1fr);
   }
+  .product-card:hover {
+    box-shadow: 0 4px 10px rgba(118, 23, 44, 0.9);
+  }
   .footerContainer {
     max-width: 1400px;
     padding: 40px 0;
-    gap: 60px;
+    gap: 10px;
   }
   .socialIcons img {
     width: 28px;

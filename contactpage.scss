@@ -9,11 +9,13 @@ $claret: #76172C;
     font-family: "myChaman";
     src: url("/chaman_elegant/CHAMAN\ ELEGANT\ FONT.ttf") format("truetype"),
     url("/chaman_elegant/CHAMAN\ ELEGANT\ FONT.otf") format("opentype");
+    font-display: auto;
 }
 @font-face {
     font-family: "myVostela";
     src: url(/vostela/VOSTELA.ttf) format(truetype),
     url(/vostela/VOSTELA.otf) format(opentype);
+    font-display: auto;
 }
 //icon img
 #iconImg {
@@ -226,12 +228,23 @@ input[type=submit]:active {
     background-color: $claret;
     color: $palePink;
 }
+.airiFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $brownCoffee;
+}
 .footerContainer {
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: space-between;
     font-family: "myVostela", sans-serif;
+}
+.footerContainer h3,
+.footerContainer p {
+    color: $palePink;
 }
 .footerSection {
     margin-bottom: 10px;
@@ -240,20 +253,19 @@ input[type=submit]:active {
 }
 .footerSection a {
     margin: 10px;
-    color: black;
+    color: white;
 }
 .footerSection a:active {
     color: $claret;
 }
 h3 {
-    color: $brownCoffee;
     font-size: 30px;
     margin-bottom: 0;
 }
 .footerSection h4, 
 .footerSection h3 {
     text-align: center;
-    color: $claret;
+    color: $palePink;
 }
 .socialIcons img {
     width: 40px;
@@ -280,20 +292,6 @@ h1 {
 .curtainMenu a {
     font-size: 2em;
     margin: 30px;
-}
-.footerContainer {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.footerSection {
-    margin-bottom: 0;
-}
-.socialIcons img {
-    width: 32px;
 }
 }
 @media (min-width: 1000px) {
@@ -325,20 +323,6 @@ h2 {
 }
 select {
     width: 95%;
-}
-.footerContainer {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.footerSection {
-    margin-bottom: 0;
-}
-.socialIcons img {
-    width: 32px;
 }
 @media (min-width: 1200px) {
     h2 {
@@ -388,7 +372,7 @@ select {
     .footerContainer {
         max-width: 1400px;
         padding: 40px 0;
-        gap: 60px;
+        gap: 10px;
     }
     .socialIcons img {
         width: 28px;
